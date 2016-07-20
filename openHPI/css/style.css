@@ -2,3 +2,14 @@
 .inhalt {
     margin-top: 60px;        
 }
+
+.profilbild_image{
+    border-radius: 1000px;
+    margin-bottom: 10px;
+}
+.projekt {
+    background-color: lightgray;
+    border: solid 1px;
+    border-color: black;
+    border-radius: 5px;
+}
