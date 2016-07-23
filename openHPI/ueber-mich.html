@@ -13,7 +13,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.ico">
 
-    <title>Meine erste eigene Website</title>
+    <title>Stefan's trnd-Blog</title>
 
     <!-- Bootstrap Haupt-CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -39,14 +39,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Mein Blog</a>
+                <a class="navbar-brand" href="index.html">Voll im trnd - Blog über Testprodukte</a>
             </div>
 
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Startseite</a></li>
-                    <li class="active"><a href="ueber-mich.html">Über mich</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">trnd-Bereich<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><b>SteuerSparErklärung</b></li>
+                            <li><a href="trnd-Steuer_Start.html">Start</a></li>
+                            <li><a href="trnd-Steuer_Installation.html">Installation</a></li>
+                            <li><a href="trnd-Steuer_ErsteSchritte.html">Erste Schritte</a></li>
+                            <li class="divider"></li>
+                            <li><b>Projekt 02</b></li>
+                            <li><a href="#">Start</a></li>
+                        </ul>
+
+                        <li class="active"><a href="ueber-mich.html">Über mich</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -57,33 +69,61 @@
     <div class="container">
 
         <div class="inhalt">
-            <h1>Über mich</h1>
-            <p class="lead">Hier kommen dann alle Inhalte der Blog-Startseite hinein.</p>
-        </div>
-        <div class="row">
-            <div class="col-md-12 bg-success">
-                <p>Frame</p>
-                <div class="col-md-5 bg-danger">
-                    <p>
-                        <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/16297254/activity-summary/7c6b8e00e4de7e7f80314e025e4aa18133bb798e'></iframe>
-                    </p>
-                </div>
-                <div class="col-md-5 bg-warning">
-                    <img class="profilbild_image img-responsive" src=images/Stef.jpg alt="Foto vom Stefan">
-                    <p>Hier soll das Bild von mir hin</p>
-                </div>
-                <div class="col-md-2">
-                    <lead>Sidebar</lead>
-                    <a style="display:inline-block;background-color:#FC4C02;color:#fff;padding:5px 10px 5px 30px;font-size:11px;font-family:Helvetica, Arial, sans-serif;white-space:nowrap;text-decoration:none;background-repeat:no-repeat;background-position:10px center;border-radius:3px;background-image:url('http://badges.strava.com/logo-strava-echelon.png')" href='http://strava.com/athletes/16297254/badge' target="_clean">
-  Folge mir auf<img src='http://badges.strava.com/logo-strava.png' alt='Strava' style='margin-left:2px;vertical-align:text-bottom' height=13 width=51 />
-</a>
+            <div class="uebertext">
+                <h1>Über mich</h1></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-5 uebertext">
+                        <p>Name:
+                            <br>Stefan</p>
+                        <p>Wohnort:
+                            <br>Berlin</p>
+                        <p>Beruf:
+                            <br>Wissenschaftlicher Mitarbeiter</p>
+                        <p>Hobbys:
+                            <br>Rad fahren, Laufen, Volleyball</p>
+                    </div>
+                    <div class="col-md-5 profilbild">
+                        <img class="profilbild_image img-responsive" src=images/Stef.jpg alt="Foto vom Stefan">
+                        <p>Das bin ich: Stefan.</p>
+                    </div>
+                    <div class="col-md-2 follow">
+                        <lead>
+                            <p>Follow me</p>
+                        </lead>
+                        <style>
+                            .strava-badge- {
+                                display: inline-block;
+                                height: 48px;
+                            }
+                            
+                            .strava-badge- img {
+                                visibility: hidden;
+                                height: 48px;
+                            }
+                            
+                            .strava-badge-:hover {
+                                background-position: 0 -63px;
+                            }
+                            
+                            .strava-badge-follow {
+                                height: 48px;
+                                width: 48px;
+                                background: url(//badges.strava.com/echelon-sprite-48.png) no-repeat 0 0;
+                            }
+                        </style>
+                        <a href="http://strava.com/athletes/16297254/badge" class="strava-badge- strava-badge-follow" target="_blank"><img src="//badges.strava.com/echelon-sprite-48.png" alt="Strava" /></a>
 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- /.container -->
-
+    <div class="nav navbar-inverse navbar-fixed-bottom">
+        <a class="btn btn-default btn-xs" href="impressum.html">Impressum</a>
+        <a class="btn btn-default btn-xs" href="kontakt.html">Kontakt</a>
+    </div>
 
     <!-- Bootstrap Haupt-JavaScript -->
     <script src="js/jquery.js"></script>
