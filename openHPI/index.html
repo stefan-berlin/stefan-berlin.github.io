@@ -44,7 +44,7 @@
 
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Startseite</a></li>
+                    <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Startseite</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">trnd-Bereich<span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -56,9 +56,12 @@
                             <li><b>Projekt 02</b></li>
                             <li><a href="#">Start</a></li>
                         </ul>
-
-                        <li><a href="ueber-mich.html">Über mich</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="ueber-mich.html"><span class="glyphicon glyphicon-user"></span> Über mich</a></li>
+                    <!--<li><a href="kontakt.html"><span class="glyphicon glyphicon-envelope"></span> Kontakt</a></li>-->
+                </ul>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -71,7 +74,7 @@
         <div class="logo">
             <div class="jumbotron">
                 <h1>Voll im trnd...</h1>
-                <p class="lead">Hier kommen dann die Übersicht über meiner trnd-Projekte hinein.</p>
+                <p>Testprodukte vorgestellt</p>
             </div>
             <div class="col-md-5 projekt">
                 <div class="col-md-6">
@@ -89,11 +92,19 @@
                 <p>Projekt 02</p>
                 <a href="#" class="btn btn-default btn-xs">Hier geht es weiter...</a>
             </div>
-            <div class="nav navbar-inverse navbar-fixed-bottom">
-                <a class="btn btn-default btn-xs" href="impressum.html">Impressum</a>
-                <a class="btn btn-default btn-xs" href="kontakt.html">Kontakt</a>
-            </div>
+
+            <!-- bottom nav bar -->
+            <nav class="navbar navbar-inverse navbar-nav navbar-fixed-bottom">
+                <div class="container">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="impressum.html"><span class="glyphicon glyphicon-asterisk"></span> Impressum</a></li>
+                        <li><a href="kontakt.html"><span class="glyphicon glyphicon-envelope"></span> Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
+
+
 
     </div>
     <!-- /.container -->
